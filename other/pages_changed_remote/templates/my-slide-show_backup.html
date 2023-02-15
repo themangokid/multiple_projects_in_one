@@ -1,0 +1,42 @@
+<!-- my-slide-show.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Slide Show</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/marpit@0.10.2/dist/marpit.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.min.js"></script>
+</head>
+<body>
+  <div id="slide-container"></div>
+
+  <script>
+    const socket = io.connect('http://localhost:5000');
+
+    socket.on('slide changed', function(slideNumber) {
+      const slideContainer = document.getElementById('slide-container');
+      slideContainer.innerHTML = `<section class="slide" data-marpit-pagination="${slideNumber}">${getSlideContent(slideNumber)}</section>`;
+    });
+
+    function getSlideContent(slideNumber) {
+      // Replace with your own code to retrieve slide content for the given slide number
+      return '';
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.code === 'ArrowLeft' || event.code === 'ArrowRight') {
+        socket.emit('key press', event.code);
+      }
+    });
+
+
+  </script>
+
+
+
+
+
+</body>
+</html>

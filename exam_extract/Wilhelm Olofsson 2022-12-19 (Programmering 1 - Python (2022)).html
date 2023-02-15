@@ -1,0 +1,88 @@
+<h1 id="wilhelm-olofsson-2022-12-19">Wilhelm Olofsson
+<strong>2022-12-19</strong></h1>
+<h2 id="prov-programmering-1---python-2022">Prov: Programmering 1 -
+Python (2022)</h2>
+<p><strong>Klass:</strong> Tk21</p>
+<h3 id="antal-ord-504">Antal ord: 504</h3>
+<p>1. De tre olika delarna av en if-sats är if, elif &amp; else. </p>
+<p>2. </p>
+<p>age = int(input('Hur gammal är du?')):</p>
+<p>    if age &gt; 24: #Vi kan sätta kommandot som if age &gt; 24
+istället för 25. Detta beror på att datorn därmed registrerar alla tal
+över 24 som korrekta svar, inklusive 25 och allt över. </p>
+<p>        print('Du är myndig.')</p>
+<p>3. </p>
+<p>languages = 'python, c++'</p>
+<p>for i in range(1, 12):</p>
+<p>    print(languages[i])</p>
+<p>Felet i programmet är att vi inte sepererar languages och [i] i
+printen. Detta innebär att systemet tolkat languages[i] som en egen
+variabel, och eftersom att ingen definition till languages[i] har
+angetts så skrivs ingenting ut. Vi måste separera på dem två. </p>
+<p>languages = 'python, c++'</p>
+<p>for i in range(1, 12):</p>
+<p>    print(languages, [i])</p>
+<p>Nu har vi separerat de två så att datorn kan läsa av båda
+individuella delar av printen. </p>
+<p>4. lista == [13, 15, 17,, 88, 42, 23, 31, 31 </p>
+<p>    for ii in list():</p>
+<p>    print "1"</p>
+<p>Rödmarkerat innebär att koden är fel.</p>
+<p>a. Lista och list är hänger ihop, mend dessa är fel. Eftersom att
+lista används i     början för listan men list används i följande
+kommando så utförs inte någonting. Lista och list bör vara likadana.
+Lista bör därför vara List.</p>
+<p>b. Det bör endast vara ett =. Två = innebär att någonting är likadant
+som någonting annat. </p>
+<p>c. Det bör inte vara två kommatecken inuti listan.</p>
+<p>d. Det bör finnas en ] som avslutar listan. Annars tar listan inte
+slut och det finns därmed inget innehåll i listan som kan printas.</p>
+<p>e. det bör endast vara ett "i" i "for ii in list():".</p>
+<p>f. Om man printar "1" så skrivs ingenting ut. Vi bör printa det som
+redan har en definition, i och sätta det inom de ramar som krävs för att
+kunna skriva ut. Dubbelfnuttar kan inte användas för att skriva ut, utan
+det bör användas paranteser. </p>
+<p>g. Det bör finnas indenteringar i koden. I detta fallet krävs en
+indentering efter "for i in list():".</p>
+<p>Korrekt kod: </p>
+<p>list = [13, 15, 17, 88, 42, 23, 31, 31]</p>
+<p>for i in list():</p>
+<p>     print(i)</p>
+<p> </p>
+<p>5. </p>
+<p>for i in range(50, 1001) #Vi skriver 1001 eftersom att datorn räknar
+fram till det sista talet, inte inklusive det sista talet. </p>
+<p>    print(i)</p>
+<p>   </p>
+<p>6. </p>
+<p>name = 'Lisa'</p>
+<p>for i in reversed(range(Lisa)):</p>
+<p>    print(i)</p>
+<p>7. </p>
+<p>for i in range(1, 100)</p>
+<p>    print(i)</p>
+<p>8. Funktioner brukar användas för att ställa upp beräkningar som
+datorn enkelt och snabbt kan beräkna. </p>
+<p>9. </p>
+<p>def test_function():</p>
+<p>    print('Detta är ett test'):</p>
+<p>test_function()</p>
+<p>10. import random</p>
+<p>number = random.randrange(1-6)</p>
+<p>    if number =</p>
+<p>11. </p>
+<p>personnummer = input('Vad är ditt personnummer?') #Vi frågar
+användaren om personnumret.</p>
+<p>    if personnummer = true: </p>
+<p>        one-time-pass = int(input(Vad är ditt one-time-pass?)):
+#Ifall att första påståendet stämmer släpps användaren in för andra
+frågan.</p>
+<p>        if one-time-pass = true: </p>
+<p>            print('Du är inloggad.') #Om även andra påståendet är
+rätt så släpps användaren in. </p>
+<p>        else: </p>
+<p>            print('Du är utelåst i tre sekunder.')</p>
+<p>    else:</p>
+<p>        print('Du är utelåst i tre sekunder.') #Om något av
+påståenden är fel så blir man utelåst.</p>
+<p>     </p>
